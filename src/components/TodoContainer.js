@@ -82,7 +82,7 @@ const TodoContainer = () => {
       <Switch>
         <Route exact path="/">
           <div className="container">
-            <div className="inner">
+            <div className="inner ">
               <Header />
               <InputTodo addItem={addItem} />
               <TodosList

@@ -19,7 +19,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -161,6 +161,21 @@ a {
     &:hover {
       color: #000;
     }
+
+    &.active-subLink {
+      color: #3a5a81;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 40%;
+        height: 5px;
+        background-color: #3a5a81;
+      }
+    }
   }
 }
 
@@ -175,5 +190,15 @@ a {
 
   p {
     line-height: 25px;
+  }
+}
+
+@media (max-width: 850px) {
+  .about__content--pushed.about__content--pushed {
+    padding-left: unset;
+  }
+
+  .active-subLink::after {
+    width: 85% !important;
   }
 }

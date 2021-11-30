@@ -1,6 +1,6 @@
 import { PropTypes } from 'prop-types';
 import React from 'react';
-import { Route, Link, useRouteMatch } from 'react-router-dom';
+import { Route, NavLink, useRouteMatch } from 'react-router-dom';
 import SinglePage from './SinglePage';
 
 const About = ({ pushContent }) => {
@@ -13,10 +13,14 @@ const About = ({ pushContent }) => {
     >
       <ul className="about__list">
         <li>
-          <Link to={`${url}/about-app`}>About App</Link>
+          <NavLink to={`${url}/about-app`} activeClassName="active-subLink">
+            About App
+          </NavLink>
         </li>
         <li>
-          <Link to={`${url}/about-author`}>About Author</Link>
+          <NavLink to={`${url}/about-author`} activeClassName="active-subLink">
+            About Author
+          </NavLink>
         </li>
       </ul>
       <Route path={`${path}/:slug`}>
