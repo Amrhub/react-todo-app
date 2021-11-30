@@ -16,15 +16,15 @@
   height: 20px;
 }
 
+.item-title {
+  flex: 1;
+}
+
 .checkbox:checked + .item-title {
   font-style: italic;
   color: #595959;
   opacity: 0.4;
   text-decoration: line-through;
-}
-
-.item-title {
-  flex: 1;
 }
 
 .textInput {

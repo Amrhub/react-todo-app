@@ -133,7 +133,7 @@ a {
     margin-bottom: 2rem;
     line-height: 1em;
     color: #696969;
-    text-transform: upperCase;
+    text-transform: uppercase;
     text-align: center;
   }
 }
@@ -166,10 +166,10 @@ a {
       color: #3a5a81;
       position: relative;
 
-      &:after {
+      &::after {
         content: '';
         position: absolute;
-        bottom: 0px;
+        bottom: 0;
         left: 0;
         width: 40%;
         height: 5px;
