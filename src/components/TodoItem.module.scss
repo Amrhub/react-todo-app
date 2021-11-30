@@ -1,0 +1,52 @@
+.item {
+  font-size: 1.2rem;
+  list-style-type: none;
+  padding: 17px 0;
+  border-bottom: 1px solid #eaeaea;
+
+  & > div {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.checkbox {
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+.item-title {
+  flex: 1;
+}
+
+.checkbox:checked + .item-title {
+  font-style: italic;
+  color: #595959;
+  opacity: 0.4;
+  text-decoration: line-through;
+}
+
+.textInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dfdfdf;
+}
+
+.item button {
+  font-size: 13px;
+  background: #f1f3f4;
+  border: none;
+  cursor: pointer;
+  float: right;
+  outline: none;
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+  margin: -10px 0 0 10px;
+}
+
+.delete-icon {
+  color: orangered;
+  font-size: 16px;
+}
