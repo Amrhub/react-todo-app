@@ -14,6 +14,10 @@ This is just a simple calculator user interface that I built using the [React](h
 
 To get a local copy up and running follow these simple example steps.
 
+## Live Demo
+
+**[Todo-react-app](https://amrhub.github.io/react-todo-app/)**
+
 ### Setup
 
 To setup the project in your local, in the repo page:
